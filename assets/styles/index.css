@@ -10,4 +10,8 @@ p {
 }
 header{
     background-color: rgb(28, 57, 184);
+    color: azure;
+    font-style: oblique;
+    padding: 60px;
+    font-size:xx-large;
 }
