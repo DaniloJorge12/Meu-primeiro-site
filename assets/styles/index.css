@@ -37,10 +37,12 @@ main{
 
 about-section{
     display:block;
-    background-color: rgb(54, 108, 190);
+    background-color: rgb(162, 199, 255);
     width: 80%;
     margin: 0 auto;
     padding: 40px;
+    margin-bottom: 60px;
+    border-radius: 40px;
 }
 
 #titulo-sobre-mim{
@@ -48,15 +50,51 @@ about-section{
     font-family: "Poppins", sans-serif;
     border-bottom: blue;
     width: 80%;
-    background-color: rgb(62, 113, 146);
+    background-color: rgba(62, 113, 146, 0);
     margin-top: 60px;
     padding: 32px;
-    border-bottom: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border: 38px 0px 38px 0px;
 }
 .texto-sobre-mim{
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     width: 80%;
-    background-color:  rgb(62, 113, 146);
+    background-color:  rgba(62, 113, 146, 0);
     padding: 32px;
+}
+hobbies{
+    display:block;
+    background-color: rgb(162, 199, 255);
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 40px;
+}
+
+ul{
+    list-style: none;
+    font-size: medium;
+    margin-top: 60px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    border-radius: 200px;
+}
+
+li{
+    background-color: rgb(0, 25, 138);
+    padding: 12px;
+    border-left: 4px solid rgb(0, 0, 0);
+    font-size: 16px;
+    min-width: 250px;
+    color: azure;
+
+}
+
+li:houver{
+    background-color: beige;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
 }
