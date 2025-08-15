@@ -139,3 +139,13 @@ contact a:hover {
     color:azure;
     transform: translateY(-2px);
 }
+footer{
+    background-color: rgb(39, 39, 39);
+    color: azure;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+footer p {
+    font-size: 1rem;
+}
