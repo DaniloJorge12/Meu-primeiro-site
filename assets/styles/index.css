@@ -1,70 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Reset do CSS*/
-*{
+/* Reset do CSS */
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-/* Configurações gerais*/
-body{
+/* Configurações gerais */
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-h1,
-p {
-    text-align:center;
+h1, p {
+    text-align: center;
 }
-header{
+
+header {
     background-color: rgb(28, 57, 184);
     color: azure;
     font-family: "Poppins", sans-serif;
     padding: 60px;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
-
-main{
+main {
     background-color: rgb(54, 108, 190);
     flex: 1;
     font-family: "Poppins", sans-serif;
-    padding: 48px 38px 48px 38px;
+    padding: 48px 38px;
     width: 100%;
 }
 
-about-section{
-    display:block;
+about-section {
+    display: block;
     background-color: rgb(162, 199, 255);
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 40px;
-    margin-bottom: 60px;
     border-radius: 40px;
 }
 
-#titulo-sobre-mim{
+#titulo-sobre-mim {
     font-size: 40px;
     font-family: "Poppins", sans-serif;
-    border-bottom: blue;
-    width: 80%;
     background-color: rgba(62, 113, 146, 0);
     margin-top: 60px;
     padding: 32px;
     border-bottom: 1px solid rgb(0, 0, 0);
-    border: 38px 0px 38px 0px;
+    width: 80%;
 }
-.texto-sobre-mim{
+
+.texto-sobre-mim {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
-    width: 80%;
-    background-color:  rgba(62, 113, 146, 0);
+    background-color: rgba(62, 113, 146, 0);
     padding: 32px;
+    width: 80%;
 }
-hobbies{
-    display:block;
+
+hobbies {
+    display: block;
     background-color: rgb(162, 199, 255);
     width: 80%;
     margin: 0 auto;
@@ -73,38 +72,40 @@ hobbies{
     border-radius: 40px;
 }
 
-ul{
+ul {
     list-style: none;
     font-size: medium;
     margin-top: 60px;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     border-radius: 200px;
+    justify-content: center;
 }
 
-li{
+li {
     background-color: rgb(0, 25, 138);
     padding: 12px;
     border-left: 4px solid rgb(0, 0, 0);
     font-size: 16px;
     min-width: 250px;
     color: azure;
-
+    text-align: center;
 }
 
-li:houver{
+li:hover {
     background-color: beige;
     transform: translateX(5px);
     transition: all 0.3s ease;
 }
 
-h1{
-    color:  rgb(54, 108, 190);
+h1 {
+    color: rgb(54, 108, 190);
 }
 
-contact{
-    display:block;
+contact {
+    display: block;
     background-color: rgb(162, 199, 255);
     width: 80%;
     margin: 0 auto;
@@ -132,20 +133,126 @@ contact a {
     margin: 0 0.5rem;
     border: 2px solid rgb(63, 98, 214);
     border-radius: 25px;
+    display: inline-block;
 }
 
 contact a:hover {
     background-color: blue;
-    color:azure;
+    color: azure;
     transform: translateY(-2px);
 }
-footer{
+
+footer {
     background-color: rgb(39, 39, 39);
     color: azure;
     text-align: center;
     padding: 2rem;
     width: 100%;
 }
+
 footer p {
     font-size: 1rem;
+    text-align: center;
+    border-width: 20px;
+}
+
+/* ================================= */
+/*        🔥 RESPONSIVIDADE 🔥        */
+/* ================================= */
+@media (max-width: 1024px) {
+    header {
+        font-size: x-large;
+        padding: 40px;
+    }
+
+    #titulo-sobre-mim,
+    .texto-sobre-mim,
+    about-section,
+    hobbies,
+    contact {
+        width: 90%;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        min-width: unset;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: large;
+        padding: 30px;
+    }
+
+    #titulo-sobre-mim {
+        font-size: 28px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 20px;
+    }
+
+    contact h2 {
+        font-size: 24px;
+    }
+
+    contact p {
+        font-size: 18px;
+    }
+
+    contact a {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: medium;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #titulo-sobre-mim {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 16px;
+    }
+
+    about-section,
+    hobbies,
+    contact {
+        width: 95%;
+        padding: 15px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    li {
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+
+    contact a {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
