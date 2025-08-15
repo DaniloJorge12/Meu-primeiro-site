@@ -98,3 +98,44 @@ li:houver{
     transform: translateX(5px);
     transition: all 0.3s ease;
 }
+
+h1{
+    color:  rgb(54, 108, 190);
+}
+
+contact{
+    display:block;
+    background-color: rgb(162, 199, 255);
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 40px;
+}
+
+contact h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+contact p {
+    font-size: 22px;
+    text-align: center;
+}
+
+contact a {
+    color: rgb(69, 126, 211);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgb(63, 98, 214);
+    border-radius: 25px;
+}
+
+contact a:hover {
+    background-color: blue;
+    color:azure;
+    transform: translateY(-2px);
+}
